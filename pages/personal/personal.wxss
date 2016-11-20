@@ -1,0 +1,23 @@
+.avatar_wra.item{
+	padding: 20rpx 36rpx;
+	background: #f2f2f2;
+	display: flex;
+	align-items: center;
+	margin: 30rpx;
+}
+.avatar_wra image{
+	width: 3rem;
+	height: 3rem;
+}
+.avatar_wra view{
+	flex: 3;	
+	padding-left: 36rpx;
+}
+.item{
+	padding: 20rpx 36rpx;
+	background: #f2f2f2;
+	display: flex;
+	align-items: center;
+	font-size: .7rem;
+	margin: 16rpx 30rpx;
+}

@@ -1,0 +1,10 @@
+<!--logs.wxml-->
+<view class="container">
+	<view class="avatar_wra item">
+	  <image src="{{userInfo.avatarUrl}}" mode="aspectFit"></image>
+	  <view>{{userInfo.nickName}}</view>
+  	</view>
+  <view class="item">省份： {{userInfo.province}}</view>
+  <view class="item">城市： {{userInfo.city}}</view>
+  <view class="item">性别： {{userInfo.gender}}</view>
+</view>

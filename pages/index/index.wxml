@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="container">
+  <image bindtap="toPersonal" class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+  <scroll-view scroll-y="true" class="bookitems-section" height="100%" bindscrolltolower="more">
+  	<swiper indicator-dots="true"
+	  autoplay="true" interval="5000" duration="1000">
+	  <block wx:key="id" wx:for="{{imgUrls}}">
+	    <swiper-item>
+	      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+	    </swiper-item>
+	  </block>
+	</swiper>
+	<block wx:key="id" wx:for="{{bookList}}">
+        <navigator hover-class="nav-hover" url="../detail/detail?id={{item.id}}">
+            <view class="book_item"> 
+                <image mode="aspectFit" class="book_item_img" src="{{item.image}}"></image>
+                <view class="book_item_infos">
+                    <view class="book_title_wra"><view class="book_title">{{item.title}}</view><view class="book_star">推荐指数：{{item.rating.average}}</view></view>
+                    <view class="book_ps rel"><text class="book_price">￥{{item.price}}</text></view>
+                    <view class="book_author">作者：{{item.author[0]}}</view>
+                    <view class="book_tags">标签：{{item.tags[0].title}}/{{item.tags[1].title}}/{{item.tags[2].title}}</view>
+                    <view class="book_item_summary">摘要：{{item.summary}}</view>
+                </view>
+            </view>
+        </navigator>
+    </block> 
+  </scroll-view>
+</view>

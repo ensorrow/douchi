@@ -1,0 +1,22 @@
+<view>
+	<view class="book_cover_wra">
+		<image src="{{bookInfo.images.large}}" class="book_cover_bg"></image>
+		<image src="{{bookInfo.images.large}}" mode="aspectFit" class="book_cover"></image>
+	</view>
+	<view class="book_title">{{bookInfo.title}}</view>
+	<view class="tip">图书信息</view>
+	<view class="book_info">				
+		<view class="book_author">作者：{{bookInfo.author}}</view>
+        <view class="book_star">推荐指数：<text>{{bookInfo.rating.average}}</text></view>
+        <view class="book_translator">译者：<text>{{bookInfo.translator.length?bookInfo.translator:"无"}}</text></view>
+        <view class="book_publisher">出版社：<text>{{bookInfo.publisher}}</text></view>
+        <view class="book_tags">标签：{{bookInfo.tags[0].title}}<text wx:if="bookInfo.tags[1].title">/{{bookInfo.tags[1].title}}</text></view>
+        <view class="book_pubdate">出版时间：{{bookInfo.pubdate}}</view>
+	</view>
+	<view class="tip">图书摘要</view>
+	<view class="book_summary_wra">
+		<view class="book_summary {{showDetail ? '' : 'short'}}">{{bookInfo.summary}}</view>
+	    <view class="extend_bar" wx:if="{{!showDetail}}" bindtap="extendBox">展开</view>
+	    <view class="extend_bar" wx:else bindtap="extendBox">收起</view>
+	</view>
+</view>

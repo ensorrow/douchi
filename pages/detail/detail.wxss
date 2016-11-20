@@ -1,0 +1,64 @@
+.book_cover_wra{
+	padding: 1.6rem 0;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+.book_cover_bg{
+	position: absolute;
+	z-index: -1;
+	width: 22rem;
+	height: 110%;
+	left: -1rem;
+	top: -5%;
+	-webkit-filter: blur(10px); /* Chrome, Opera */
+       -moz-filter: blur(10px);
+        -ms-filter: blur(10px);    
+            filter: blur(10px);
+}
+.book_cover{
+	width: 100%;
+}
+.tip{
+    background-color: #f0f0f0;
+    font-size: .8rem;
+    color:darkseagreen;
+    padding: 10rpx;
+    margin: 0 .3rem;
+}
+.book_info{    
+    font-size: .7rem;
+    color: #666;
+    padding: 0 .3rem;
+}
+.book_info view{
+	margin: 10rpx;
+}
+.book_star text{
+    color: gold;
+}
+.book_title{
+	font-size: 1rem;
+    margin: 0 .3rem;
+	padding: 20rpx 0;
+}
+.book_summary_wra{
+	margin: 10rpx .3rem;
+	position: relative;
+}
+.book_summary{
+	font-size: .7rem;
+	color: #666;	
+	line-height: .9rem;
+	text-indent: 2em;
+}
+.book_summary.short{
+	height: 4.5rem;
+	overflow: hidden;
+}
+.extend_bar{
+	color: #000;
+	text-align: right;
+	font-size: .7rem;
+	margin: 0 .3rem;
+}

@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/personal/personal",
+    "pages/classify/classify",
+    "pages/search/search"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "rgb(6, 195, 173)",
+    "navigationBarTitleText": "豆豉读书",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "selectedColor": "#333",
+    "backgroundColor": "#f2f2f2",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "static/imgs/home.png",
+      "selectedIconPath": "static/imgs/home_active.png"
+    }, {
+      "pagePath": "pages/classify/classify",
+      "text": "分类",
+      "iconPath": "static/imgs/classify.png",
+      "selectedIconPath": "static/imgs/classify_active.png"
+    }, {
+      "pagePath": "pages/search/search",
+      "text": "搜索",
+      "iconPath": "static/imgs/search.png",
+      "selectedIconPath": "static/imgs/search_active.png"
+    }]
+  }
+}
